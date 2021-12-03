@@ -47,8 +47,8 @@ class Buku extends CI_Controller
                 'tahun_terbit'  => $this->input->post('tahun', true),
                 'isbn'          => $this->input->post('isbn', true),
                 'stok'          => $this->input->post('stok', true),
-                'dipinjam'      => 0,
-                'dibooking'     => 0,
+                'idpinjam'      => 0,
+                'idbooking'     => 0,
                 'image'         => $gambar
             ];
             $this->ModelBuku->simpanBuku($data);
